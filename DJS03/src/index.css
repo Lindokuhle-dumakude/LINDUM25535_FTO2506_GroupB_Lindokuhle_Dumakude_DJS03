@@ -11,6 +11,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
 .podcast-card:hover {
@@ -74,4 +75,49 @@
   font-weight: 600;
   font-size: 1.2rem;
   text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #121212;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.podcastLogoAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.podcastAppLogo {
+  width: 40px;
+  height: 40px;
+}
+
+.podcastTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.podcastSearchAndProfile {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.searchIcon,
+.profileIcon {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.searchIcon:hover,
+.profileIcon:hover {
+  transform: scale(1.1);
 }
