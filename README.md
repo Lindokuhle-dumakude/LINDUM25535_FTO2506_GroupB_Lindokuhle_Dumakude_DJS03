@@ -51,4 +51,10 @@ Navigate to http://localhost:5173 in your browser
 
 ---
 
-![alt text](image.png)
+## 🚀 Usage Examples
+
+![Mobile Response](mobile-view.png)
+
+![Desktop Response](desktop-view.png)
+
+---
