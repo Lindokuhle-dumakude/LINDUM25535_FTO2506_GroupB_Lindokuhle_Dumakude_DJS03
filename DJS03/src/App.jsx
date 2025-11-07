@@ -70,3 +70,6 @@ function App() {
     </div>
   );
 }
+
+// Export the component so it can be imported elsewhere
+export default App;
