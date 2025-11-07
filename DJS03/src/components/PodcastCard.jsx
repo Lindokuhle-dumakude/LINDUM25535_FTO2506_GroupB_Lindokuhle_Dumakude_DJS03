@@ -39,3 +39,5 @@ function PodcastCard({ podcast }) {
     </div>
   );
 }
+
+export default PodcastCard;
