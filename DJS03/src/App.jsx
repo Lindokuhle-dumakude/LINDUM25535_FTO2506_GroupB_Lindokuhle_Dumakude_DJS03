@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import PodcastCard from "./components/PodcastCard.jsx";
 import Loading from "./components/Loading.jsx";
 import ErrorMessage from "./components/ErrorMessage.jsx";
+import Header from "./components/Header.jsx";
 // Global CSS for styling
 import "./index.css";
 
@@ -62,12 +63,14 @@ function App() {
 
   // Render the list of podcasts in a grid
   return (
-    <div className="podcast-grid">
-      {podcasts.map((podcast) => (
-        // Each podcast is rendered as a PodcastCard
-        <PodcastCard key={podcast.id} podcast={podcast} />
-      ))}
-    </div>
+    <>
+      <Header />
+      <div className="podcast-grid">
+        {podcasts.map((podcast) => (
+          <PodcastCard key={podcast.id} podcast={podcast} />
+        ))}
+      </div>
+    </>
   );
 }
 
